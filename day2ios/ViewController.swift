@@ -35,6 +35,18 @@ class ViewController: UIViewController {
         lblresult.text = String(c)
     }
     
+    @IBAction func btnMul(_ sender: UIButton) {
+        a = Int(txtno1.text!)!
+        b = Int(txtno2.text!)!
+        c = a * b
+        lblresult.text = String(c)
+    }
+    @IBAction func btnDiv(_ sender: UIButton) {
+        a = Int(txtno1.text!)!
+        b = Int(txtno2.text!)!
+        c = a / b
+        lblresult.text = String(c)
+    }
     @IBAction func btnSumbit(_ sender: UIButton) {
     }
     
