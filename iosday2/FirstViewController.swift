@@ -16,7 +16,16 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBOutlet weak var lblmessage: UILabel!
     @IBAction func onoffswicth(_ sender: UISwitch) {
+        if(sender.isOn)
+        {
+            self.lblmessage.text = "Switch is ON"
+        }
+        else
+        {
+           self.lblmessage.text = "Switch is off"
+        }
     }
     
     @IBAction func ShowAlert(_ sender: UIButton) {
