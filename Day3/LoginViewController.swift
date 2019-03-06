@@ -15,6 +15,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var Loginemailvalidation: UILabel!
     
     @IBOutlet weak var LoginPasswordvalidation: UILabel!
+    @IBOutlet weak var Remembermeswicth: UISwitch!
+    @IBOutlet weak var LOginmessage: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,17 +26,18 @@ class LoginViewController: UIViewController {
     @IBAction func Sumbitbutton(_ sender: Any) {
         Loginemailvalidation.text = ""
         LoginPasswordvalidation.text = ""
+        LOginmessage.text = ""
         if Loginemail.text == "amrit@.com"
         {
             if LoginPassword.text == "amrit"
             {
-                
+                LOginmessage.text = "login successful"
             }else
             {
-                Loginemailvalidation.text = "invalid email"
+                LoginPasswordvalidation.text = "invalid password"
             }
         }else{
-            LoginPasswordvalidation.text = "invalid password"
+            Loginemailvalidation.text = "invalid email"
         }
     }
     
