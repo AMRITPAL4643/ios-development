@@ -1,0 +1,42 @@
+//
+//  ViewController.swift
+//  Day3
+//
+//  Created by MacStudent on 2019-03-06.
+//  Copyright © 2019 MacStudent. All rights reserved.
+//
+
+import UIKit
+
+class LoginViewController: UIViewController {
+
+    @IBOutlet weak var Loginemail: UITextField!
+    @IBOutlet weak var LoginPassword: UITextField!
+    @IBOutlet weak var Loginemailvalidation: UILabel!
+    
+    @IBOutlet weak var LoginPasswordvalidation: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    @IBAction func Sumbitbutton(_ sender: Any) {
+        Loginemailvalidation.text = ""
+        LoginPasswordvalidation.text = ""
+        if Loginemail.text == "amrit@.com"
+        {
+            if LoginPassword.text == "amrit"
+            {
+                
+            }else
+            {
+                Loginemailvalidation.text = "invalid email"
+            }
+        }else{
+            LoginPasswordvalidation.text = "invalid password"
+        }
+    }
+    
+}
+
