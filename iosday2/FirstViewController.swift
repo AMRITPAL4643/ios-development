@@ -10,57 +10,90 @@ import UIKit
 
 class FirstViewController: UIViewController {
   
-    @IBOutlet weak var showalert2: UIButton!
-    @IBOutlet weak var res: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
-   
-    @IBAction func sw1(_ sender: UISwitch) {
-        if sender.isOn
-        {
-            res.text="on"
-        }
-        else
-        {
-            res.text = "off"
-        }
+    @IBAction func onoffswicth(_ sender: UISwitch) {
     }
     
-    @IBAction func ShowALERTbtn(_ sender: Any)
+    @IBAction func ShowAlert(_ sender: UIButton) {
+        showAlert()
+    }
+    
+    @IBAction func ShowAlert1(_ sender: UIButton) {
+        showInputAlert()
+    }
+    
+    func showAlert()
     {
-        var alert = UIAlertController(title: "Alert", message: "how r u", preferredStyle: .alert)
-        var action1 = UIAlertAction(title: "ok", style: .default, handler: nil)
-        var action3 = UIAlertAction(title: "Delete", style: .destructive , handler: nil)
-        var action2 = UIAlertAction(title: "cancel", style: .cancel, handler:{(action:UIAlertAction) in print("why")})
+        let alert = UIAlertController(title: "Alert", message: "How are you>", preferredStyle: .alert)
         
+        let actionDefault = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: {(action:UIAlertAction) in
+            print("Cancel Click")
+        })
         
-        alert.addAction(action1)
-        alert.addAction(action2)
-        alert.addAction(action3)
+        let actionDestrictive = UIAlertAction(title: "Delete", style: .destructive, handler: nil)
         
+        alert.addAction(actionDefault)
+        alert.addAction(actionCancel)
+        alert.addAction(actionDestrictive)
         
         self.present(alert, animated: true)
     }
-    func showalert()
+    
+    //Second Type
+    func showActionSheet()
     {
-        var alert = UIAlertController(title: "Alert", message: "how r u", preferredStyle: .alert)
-        var action1 = UIAlertAction(title: "ok", style: .default, handler: nil)
-        var action3 = UIAlertAction(title: "Delete", style: .destructive , handler: nil)
-        var action2 = UIAlertAction(title: "cancel", style: .cancel, handler:{(action:UIAlertAction) in print("why")})
+        let alert = UIAlertController(title: "Alert", message: "How are you>", preferredStyle: .actionSheet)
         
+        let actionDefault = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: {(action:UIAlertAction) in
+            print("Cancel Click")
+        })
         
-        alert.addAction(action1)
-        alert.addAction(action2)
-        alert.addAction(action3)
+        let actionDestrictive = UIAlertAction(title: "Delete", style: .destructive, handler: nil)
         
+        alert.addAction(actionDefault)
+        alert.addAction(actionCancel)
+        alert.addAction(actionDestrictive)
         
         self.present(alert, animated: true)
     }
-    func
+    
+    //User Alert type for Input fields
+    func showInputAlert()
+    {
+        let alert = UIAlertController(title: "What's your name?", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Input your name here..."
+        })
+        
+        alert.addTextField { (textField) in
+            textField.isSecureTextEntry = true
+            textField.placeholder = "Input your password here..."
+        }
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            
+            if let name = alert.textFields?.first?.text {
+                print("Your name: \(name)")
+            }
+            
+            if let name = alert.textFields?[1].text {
+                print("Your password: \(name)")
+            }
+        }))
+        
+        self.present(alert, animated: true)
+    }
 }
+
+ 
 
 
