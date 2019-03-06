@@ -14,6 +14,7 @@
 		9B2F451D222F3E3000CDB294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2F451B222F3E3000CDB294 /* LaunchScreen.storyboard */; };
 		9B2F4525222F4FFF00CDB294 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2F4524222F4FFF00CDB294 /* ImageViewController.swift */; };
 		9B2F4527222F520100CDB294 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B2F4526222F520100CDB294 /* download.jpeg */; };
+		9B2F4529222F52DB00CDB294 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B2F4528222F52DB00CDB294 /* 2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9B2F451E222F3E3000CDB294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B2F4524222F4FFF00CDB294 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		9B2F4526222F520100CDB294 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		9B2F4528222F52DB00CDB294 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				9B2F4514222F3E3000CDB294 /* FirstViewController.swift */,
 				9B2F4516222F3E3000CDB294 /* Main.storyboard */,
 				9B2F4519222F3E3000CDB294 /* Assets.xcassets */,
+				9B2F4528222F52DB00CDB294 /* 2.jpg */,
 				9B2F4526222F520100CDB294 /* download.jpeg */,
 				9B2F451B222F3E3000CDB294 /* LaunchScreen.storyboard */,
 				9B2F451E222F3E3000CDB294 /* Info.plist */,
@@ -130,6 +133,7 @@
 			files = (
 				9B2F451D222F3E3000CDB294 /* LaunchScreen.storyboard in Resources */,
 				9B2F4527222F520100CDB294 /* download.jpeg in Resources */,
+				9B2F4529222F52DB00CDB294 /* 2.jpg in Resources */,
 				9B2F451A222F3E3000CDB294 /* Assets.xcassets in Resources */,
 				9B2F4518222F3E3000CDB294 /* Main.storyboard in Resources */,
 			);

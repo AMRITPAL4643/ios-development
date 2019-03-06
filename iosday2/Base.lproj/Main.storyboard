@@ -41,6 +41,14 @@
                                     <action selector="onoffswicth:" destination="BYZ-38-t0r" eventType="valueChanged" id="owq-Sj-fVA"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lki-9Q-f9J">
+                                <rect key="frame" x="130" y="318" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="goto next screen"/>
+                                <connections>
+                                    <segue destination="2Je-Yq-2Ra" kind="show" id="7Lp-MQ-YFE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.27634217726796884" green="0.3529311320181886" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="0.26103535359122165" blue="0.93589056310128615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,18 +57,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="-40"/>
+            <point key="canvasLocation" x="761" y="-40"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="H9Z-eR-TUw">
             <objects>
                 <viewController id="2Je-Yq-2Ra" customClass="ImageViewController" customModule="iosday2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c5Q-jt-LTg">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="c5Q-jt-LTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="CaJ-1i-sRW">
                                 <rect key="frame" x="60" y="147" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9ra-cF-bF7">
+                                <rect key="frame" x="60" y="312" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -70,10 +82,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNq-9B-2uo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="982" y="-40"/>
+            <point key="canvasLocation" x="1566" y="-40"/>
         </scene>
     </scenes>
     <resources>
+        <image name="2.jpg" width="1260" height="712"/>
         <image name="download.jpeg" width="276" height="183"/>
     </resources>
 </document>
