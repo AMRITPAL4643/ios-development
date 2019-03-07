@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  About Us ViewController.swift
 //  Day3
 //
 //  Created by MacStudent on 2019-03-06.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class About_Us_ViewController: UIViewController {
 
-    @IBOutlet weak var AboutUsbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
