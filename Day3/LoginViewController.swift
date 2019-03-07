@@ -31,15 +31,13 @@ class LoginViewController: UIViewController {
         {
             if LoginPassword.text == "amrit"
             {
-//                var alert = UIAlertController(title: "alert", message: "login sucessfully", preferredStyle: .alert)
-//                var action3 = UIAlertAction(title: "ok", style: .default , handler: nil)
-//                alert.addAction(action3)
-//                self.present(alert, animated: true)
-                
+             //var alert = UIAlertController(title: "alert", message: "login sucessfully", preferredStyle: .alert)
+             //   let action3 = UIAlertAction(title: "ok", style: .default , handler: nil);               alert.addAction(action3)
+             //  self.present(alert, animated: true)
                 let sb = UIStoryboard(name: "Main", bundle: nil)
-                let homeVC = sb.instantiateViewController(withIdentifier: "Homevc") as! HomeViewController
-                self.navigationController?.pushViewController(homeVC, animated: true)
-                
+                let homevc = sb.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
+                self.navigationController?.pushViewController(homevc, animated: true)
+               
                 
                 
             }else
