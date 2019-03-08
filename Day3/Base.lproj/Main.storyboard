@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016.8" y="-41.829085457271368"/>
+            <point key="canvasLocation" x="1127" y="-54"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="DW2-rG-VaX">
@@ -123,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DW5-vb-fXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624.8" y="-35.532233883058474"/>
+            <point key="canvasLocation" x="1532" y="-31"/>
         </scene>
         <!--About Us-->
         <scene sceneID="b5o-lp-gPi">
@@ -132,13 +132,43 @@
                     <view key="view" contentMode="scaleToFill" id="CEg-0w-dMK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gnB-OO-VFR">
+                                <rect key="frame" x="16" y="63" width="334" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="first"/>
+                                    <segment title="Second"/>
+                                    <segment title="third"/>
+                                    <segment title="fourth"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment:" destination="DtZ-jW-aeI" eventType="valueChanged" id="Kpk-nX-ULT"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="n3a-Qp-mhj">
+                                <rect key="frame" x="62" y="148" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnj-LF-u3U">
+                                <rect key="frame" x="14" y="99" width="336" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="H8p-mP-Jgm"/>
                     </view>
+                    <connections>
+                        <outlet property="imganimal" destination="n3a-Qp-mhj" id="5uj-Zp-8at"/>
+                        <outlet property="lblanimalname" destination="jnj-LF-u3U" id="32l-fw-Uqg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZL-1E-FQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2231" y="-36"/>
+            <point key="canvasLocation" x="2616.8000000000002" y="-367.46626686656674"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KWp-Pi-TQX">
@@ -159,4 +189,7 @@
             <point key="canvasLocation" x="77.599999999999994" y="-41.829085457271368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="download.jpeg" width="206" height="244"/>
+    </resources>
 </document>

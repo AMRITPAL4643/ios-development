@@ -13,7 +13,16 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var AboutUsbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let userDefault = UserDefaults.standard
+        
+        if let email = userDefault.string(forKey: "userEmail")
+        {
+            print(email)
+        }
+        if let pwd = userDefault.string(forKey: "userPassword")
+        {
+            print(pwd)
+        }
         // Do any additional setup after loading the view.
     }
     
