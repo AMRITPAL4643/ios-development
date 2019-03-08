@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
         {
             print(pwd)
         }
+       
         // Do any additional setup after loading the view.
     }
     

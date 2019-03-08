@@ -11,6 +11,7 @@ import UIKit
 class About_Us_ViewController: UIViewController {
     var x: Int?
     @IBOutlet weak var lblanimalname: UILabel!
+    @IBOutlet weak var lblStepperValue: UILabel!
     @IBOutlet weak var imganimal: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,9 @@ class About_Us_ViewController: UIViewController {
         }
     }
     
+    @IBAction func stappernumber(_ sender: UIStepper) {
+        lblStepperValue.text = "\(sender.value)"
+    }
     /*
     // MARK: - Navigation
 
