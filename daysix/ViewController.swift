@@ -24,6 +24,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "countryCellIdentifier")!
         cell.textLabel?.text = self.countryNameList[indexPath.row]
         cell.detailTextLabel?.text = "code"
+        cell.imageView?.image = UIImage(named: "f.png")
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
