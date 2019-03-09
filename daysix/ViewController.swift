@@ -23,7 +23,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "countryCellIdentifier")!
         cell.textLabel?.text = self.countryNameList[indexPath.row]
+        cell.detailTextLabel?.text = "code"
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(self.countryNameList[indexPath.row])
     }
     
 
