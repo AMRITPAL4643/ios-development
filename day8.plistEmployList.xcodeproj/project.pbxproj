@@ -12,6 +12,7 @@
 		9B0D02862238732600C944DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D02842238732600C944DF /* Main.storyboard */; };
 		9B0D02882238732600C944DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D02872238732600C944DF /* Assets.xcassets */; };
 		9B0D028B2238732600C944DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D02892238732600C944DF /* LaunchScreen.storyboard */; };
+		9B0D02932238735C00C944DF /* Employ.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D02922238735C00C944DF /* Employ.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9B0D02872238732600C944DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B0D028A2238732600C944DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B0D028C2238732600C944DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0D02922238735C00C944DF /* Employ.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Employ.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9B0D02872238732600C944DF /* Assets.xcassets */,
 				9B0D02892238732600C944DF /* LaunchScreen.storyboard */,
 				9B0D028C2238732600C944DF /* Info.plist */,
+				9B0D02922238735C00C944DF /* Employ.plist */,
 			);
 			path = day8.plistEmployList;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0D02932238735C00C944DF /* Employ.plist in Resources */,
 				9B0D028B2238732600C944DF /* LaunchScreen.storyboard in Resources */,
 				9B0D02882238732600C944DF /* Assets.xcassets in Resources */,
 				9B0D02862238732600C944DF /* Main.storyboard in Resources */,
